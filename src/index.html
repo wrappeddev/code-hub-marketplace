@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <title>Marketplace</title>
+    <link rel="icon" href="https://cs.code-hub.cc/codehub-logo.png">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Code Hub Marketplace">
+<meta name="twitter:description" content="Discover the best Discord bot commands and events in the Code Hub Marketplace. Enhance your bot with our curated collection of community-driven resources.">
+<meta name="twitter:image" content="https://market.code-hub.cc/market.png">
+<meta name="twitter:url" content="https://market.code-hub.cc/">
+<meta content="#2258f2" data-react-helmet="true" name="theme-color">
+
+
+<style>
+    body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        code {
+            color: #60a5fa
+        }
+
+
+
+        ol li::marker {
+            color: #60a5fa;
+        }
+
+        ul li::marker {
+            color: #60a5fa;
+        }
+
+
+        .typing-animation {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: .15em solid orange;
+            animation:
+                typing 5s steps(40, end) forwards,
+                blink-caret .75s step-end infinite;
+        }
+
+
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: rgb(123, 158, 254);
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100 flex flex-col items-center min-h-screen py-8 px-4">
+
+    <!-- <main class="flex-1 p-8 ml-20">
+      <header class="mb-1 flex items-center justify-between">
+        <p class="text-8xl font-semibold text-white flex items-center">
+          Welcome to Code Hub</p>
+          <img src="https://cs.code-hub.cc/codehub-logo.png" alt="Community Guides Icon" class="mr-35 w-35 h-35" />
+        <div class="text-gray-400">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </div>
+      </header>
+
+        <div class="text-xl ml-3 mb-30 font-thin text-gray-300">
+            <span id="animated-text" class="typing-animation"></span>
+        </div> -->
+
+
+
+    
+
+
+
+        <nav
+            class="w-full bg-gray-900 border-b border-gray-800 py-4 px-8 flex justify-between items-center fixed top-0 left-0 z-50 shadow-lg">
+            <div class="flex items-center">
+                <a href="#" class="flex items-center text-white text-2xl font-bold mr-8">
+                    <i class="fas fa-cubes text-blue-500 mr-2"></i>
+                    Marketplace 
+                      
+                </a>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="#"
+                    class="text-gray-300 hover:text-white transition-colors duration-200 text-lg font-medium">Partners</a>
+                <a href="#"
+                    class="text-gray-300 hover:text-white transition-colors duration-200 text-lg font-medium">Community
+                    Guides</a>
+            </div>
+        </nav>
+
+
+         <nav
+            class="w-full bg-gray-900 border-b border-gray-800 py-4 px-8 flex justify-between items-center fixed top-0 left-0 z-50 shadow-lg">
+            <div class="flex items-center">
+                <a href="#" class="flex items-center text-white text-2xl font-bold mr-8">
+                    <i class="fas fa-cubes text-blue-500 mr-2"></i>
+                    Marketplace 
+                      
+                </a>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="https://partners.code-hub.cc/"
+                    class="text-gray-300 hover:text-white transition-colors duration-200 text-lg font-medium">Partners</a>
+                <a href="https://cs.code-hub.cc/"
+                    class="text-gray-300 hover:text-white transition-colors duration-200 text-lg font-medium">Community
+                    Guides</a>
+            </div>
+        </nav>
+
+ 
+
+
+                
+      
+
+        <div class="pt-28 pb-10 flex flex-col items-center w-full max-w-7xl px-4">
+            <div class="text-center mb-12">
+                <h1 class="text-6xl font-extrabold text-white mb-3 tracking-tight">Most <span
+                        class="highlight text-blue-500">Popular</span> Commands</h1>
+                <p class="text-xl text-gray-400">
+                <div class="text-xl  font-thin text-gray-300">
+                    <span id="animated-text" class="typing-animation"></span>
+                </div> </p>
+            </div>
+
+            <div id="main-commands-grid" class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+                <button id="module-ticket" class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-7 flex flex-col justify-between items-start shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2 border border-gray-700 cursor-pointer group">
+                    <div
+                        class="icon-placeholder bg-blue-700/80 text-white rounded-xl w-20 h-20 flex justify-center items-center mb-6 text-4xl flex-shrink-0 group-hover:bg-blue-600 transition-colors duration-200">
+                        <p class="font-extrabold"></p>
+                        <i class="fas fa-ticket-alt"></i>
+                    </div>
+                    <div class="text-left w-full">
+                        <p
+                            class="text-4xl font-extrabold text-white mb-2 group-hover:text-blue-300 transition-colors duration-200">
+                            /ticket</p>
+                        <p class="text-lg text-gray-300 leading-relaxed">Instantly create and manage support tickets for
+                            various issues and inquiries.</p>
+                    </div>
+                </button>
+
+                <button id="module-invite" class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-7 flex flex-col justify-between items-start shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2 border border-gray-700 cursor-pointer group">
+                    <div
+                        class="icon-placeholder bg-blue-700/80 text-white rounded-xl w-20 h-20 flex justify-center items-center mb-6 text-4xl flex-shrink-0 group-hover:bg-blue-600 transition-colors duration-200">
+                        <p class="font-extrabold"></p>
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <div class="text-left w-full">
+                        <p
+                            class="text-4xl font-extrabold text-white mb-2 group-hover:text-blue-300 transition-colors duration-200">
+                            /invite</p>
+                        <p class="text-lg text-gray-300 leading-relaxed">Generate personalized invitation links to
+                            welcome new members to your community.</p>
+                    </div>
+                </button>
+
+                <button
+                    class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-7 flex flex-col justify-between items-start shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2 border border-gray-700 cursor-pointer group">
+                    <div
+                        class="icon-placeholder bg-blue-700/80 text-white rounded-xl w-20 h-20 flex justify-center items-center mb-6 text-4xl flex-shrink-0 group-hover:bg-blue-600 transition-colors duration-200">
+                        <p class="font-extrabold"></p>
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <div class="text-left w-full">
+                        <p
+                            class="text-4xl font-extrabold text-white mb-2 group-hover:text-blue-300 transition-colors duration-200">
+                            /help</p>
+                        <p class="text-lg text-gray-300 leading-relaxed">Access comprehensive documentation and support
+                            resources for all commands.</p>
+                    </div>
+                </button>
+
+                <button
+                    class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-7 flex flex-col justify-between items-start shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2 border border-gray-700 cursor-pointer group">
+                    <div
+                        class="icon-placeholder bg-blue-700/80 text-white rounded-xl w-20 h-20 flex justify-center items-center mb-6 text-4xl flex-shrink-0 group-hover:bg-blue-600 transition-colors duration-200">
+                        <p class="font-extrabold"></p>
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <div class="text-left w-full">
+                        <p
+                            class="text-4xl font-extrabold text-white mb-2 group-hover:text-blue-300 transition-colors duration-200">
+                            /settings</p>
+                        <p class="text-lg text-gray-300 leading-relaxed">Customize bot functionalities and preferences
+                            to suit your server's needs.</p>
+                    </div>
+                </button>
+
+                <button
+                    class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-7 flex flex-col justify-between items-start shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2 border border-gray-700 cursor-pointer group">
+                    <div
+                        class="icon-placeholder bg-blue-700/80 text-white rounded-xl w-20 h-20 flex justify-center items-center mb-6 text-4xl flex-shrink-0 group-hover:bg-blue-600 transition-colors duration-200">
+                        <p class="font-extrabold"></p>
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="text-left w-full">
+                        <p
+                            class="text-4xl font-extrabold text-white mb-2 group-hover:text-blue-300 transition-colors duration-200">
+                            /info</p>
+                        <p class="text-lg text-gray-300 leading-relaxed">Retrieve essential information about the bot,
+                            its version, and features.</p>
+                    </div>
+                </button>
+
+                <button id="module-stats"
+                    class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-7 flex flex-col justify-between items-start shadow-xl hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2 border border-gray-700 cursor-pointer group">
+                    <div
+                        class="icon-placeholder bg-blue-700/80 text-white rounded-xl w-20 h-20 flex justify-center items-center mb-6 text-4xl flex-shrink-0 group-hover:bg-blue-600 transition-colors duration-200">
+                        <p class="font-extrabold"></p>
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="text-left w-full">
+                        <p
+                            class="text-4xl font-extrabold text-white mb-2 group-hover:text-blue-300 transition-colors duration-200">
+                            /setup-stats</p>
+                        <p class="text-lg text-gray-300 leading-relaxed">View detailed statistics and performance
+                            metrics for your server.</p>
+                    </div>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        </main>
+
+
+<a href="submit.html" class="fixed mt-162 ml-310 p-3 rounded-lg bg-blue-800 text-white transition-all duration-200 hover:bg-blue-700 cursor-pointer hover:-translate-y-1">Submit Command & Event</a>
+
+
+
+
+
+
+        <div id="content-ticket" class="hidden w-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 shadow-xl border border-blue-500">
+            <h2 class="text-5xl font-extrabold text-white mb-4">Ticket Command Details</h2>
+            <p class="text-xl text-blue-200 leading-relaxed mb-6">The `/ticket` command is designed to streamline your support operations. Users can create new tickets for various issues, and staff can efficiently manage and resolve them.</p>
+            <ul class="list-disc list-inside text-lg text-blue-200 space-y-2">
+                <li>Create new support tickets easily.</li>
+                <li>Assign tickets to specific staff members.</li>
+                <li>Add notes and updates to ticket conversations.</li>
+                <li>Close or re-open tickets as needed.</li>
+                <li>Integrates with custom channels for ticket logging.</li>
+            </ul>
+
+                    
+     <div class="relative group mt-4 mb-4">
+    <pre class="bg-gray-900 p-4 rounded-md mt-4 overflow-auto">
+<code><strong>Example Code</strong></code></pre>
+    <button
+        class="copy-button absolute top-2 right-2 bg-gray-700 text-gray-300 p-1 rounded-md transition-opacity duration-200"
+        title="Copy code">
+        <img class="h-5 w-5" src="copy-icon.png" alt="">
+    </button></div>
+
+
+
+        
+             <button class="mt-8 bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-md" onclick="showMainCommandsGrid()">Back to Marketplace</button>
+        </div>
+
+        <div id="content-invite" class="hidden w-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 shadow-xl border border-blue-500">
+            <h2 class="text-5xl font-extrabold text-white mb-4">Invite Command Details</h2>
+            <p class="text-xl text-blue-200 leading-relaxed mb-6">The `/invite` command allows you to generate custom invitation links for your server, complete with various options for control and tracking.</p>
+            <ul class="list-disc list-inside text-lg text-blue-200 space-y-2">
+                <li>Generate temporary or permanent invite links.</li>
+                <li>Set max usage limits for invites.</li>
+                <li>Track invite statistics and user joins.</li>
+                <li>Customizable invite messages.</li>
+            </ul>
+                    
+     <div class="relative group mt-4 mb-4">
+    <pre class="bg-gray-900 p-4 rounded-md mt-4 overflow-auto">
+<code><strong>Example Code</strong></code></pre>
+    <button
+        class="copy-button absolute top-2 right-2 bg-gray-700 text-gray-300 p-1 rounded-md transition-opacity duration-200"
+        title="Copy code">
+        <img class="h-5 w-5" src="copy-icon.png" alt="">
+    </button></div>
+
+
+           
+            <button class="mt-8 bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-md" onclick="showMainCommandsGrid()">Back to Commands</button>
+        </div>
+
+        <div id="content-help" class="hidden w-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 shadow-xl border border-blue-500">
+            <h2 class="text-5xl font-extrabold text-white mb-4">Help Command Details</h2>
+            <p class="text-xl text-blue-200 leading-relaxed mb-6">The `/help` command provides users with a comprehensive guide to all bot commands and features, ensuring they can get the most out of your bot.</p>
+            <ul class="list-disc list-inside text-lg text-blue-200 space-y-2">
+                <li>Browse commands by category.</li>
+                <li>Get detailed usage information for each command.</li>
+                <li>Access frequently asked questions (FAQs).</li>
+                <li>Link to external documentation or support servers.</li>
+            </ul>
+                                
+     <div class="relative group mt-4 mb-4">
+    <pre class="bg-gray-900 p-4 rounded-md mt-4 overflow-auto">
+<code><strong>Example Code</strong></code></pre>
+    <button
+        class="copy-button absolute top-2 right-2 bg-gray-700 text-gray-300 p-1 rounded-md transition-opacity duration-200"
+        title="Copy code">
+        <img class="h-5 w-5" src="copy-icon.png" alt="">
+    </button></div>
+
+
+            
+            <button class="mt-8 bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-md" onclick="showMainCommandsGrid()">Back to Commands</button>
+        </div>
+
+        <div id="content-settings" class="hidden w-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 shadow-xl border border-blue-500">
+            <h2 class="text-5xl font-extrabold text-white mb-4">Settings Command Details</h2>
+            <p class="text-xl text-blue-200 leading-relaxed mb-6">The `/settings` command allows administrators to configure various aspects of the bot's behavior within their server, offering granular control.</p>
+            <ul class="list-disc list-inside text-lg text-blue-200 space-y-2">
+                <li>Configure prefix and permissions.</li>
+                <li>Manage logging channels.</li>
+                <li>Enable/disable specific features.</li>
+                <li>Set up moderation rules.</li>
+            </ul>
+                    
+     <div class="relative group mt-4 mb-4">
+    <pre class="bg-gray-900 p-4 rounded-md mt-4 overflow-auto">
+<code><strong>Example Code</strong></code></pre>
+    <button
+        class="copy-button absolute top-2 right-2 bg-gray-700 text-gray-300 p-1 rounded-md transition-opacity duration-200"
+        title="Copy code">
+        <img class="h-5 w-5" src="copy-icon.png" alt="">
+    </button></div>
+
+
+            
+            <button class="mt-8 bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-md" onclick="showMainCommandsGrid()">Back to Commands</button>
+        </div>
+
+        <div id="content-info" class="hidden w-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 shadow-xl border border-blue-500">
+            <h2 class="text-5xl font-extrabold text-white mb-4">Info Command Details</h2>
+            <p class="text-xl text-blue-200 leading-relaxed mb-6">The `/info` command provides quick access to essential information about the bot, its developers, and current status.</p>
+            <ul class="list-disc list-inside text-lg text-blue-200 space-y-2">
+                <li>Bot version and uptime.</li>
+                <li>Developer credits and links.</li>
+                <li>Server count and user count.</li>
+                <li>Links to privacy policy and terms of service.</li>
+            </ul>
+           
+                    
+     <div class="relative group mt-4 mb-4">
+    <pre class="bg-gray-900 p-4 rounded-md mt-4 overflow-auto">
+<code><strong>Example Code</strong></code></pre>
+    <button
+        class="copy-button absolute top-2 right-2 bg-gray-700 text-gray-300 p-1 rounded-md transition-opacity duration-200"
+        title="Copy code">
+        <img class="h-5 w-5" src="copy-icon.png" alt="">
+    </button></div>
+
+
+            <button class="mt-8 bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-md" onclick="showMainCommandsGrid()">Back to Commands</button>
+        </div>
+
+        <div id="content-stats" class="hidden w-full bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 shadow-xl border border-blue-500">
+            <h2 class="text-5xl font-extrabold text-white mb-4">Stats Command Details</h2>
+            <p class="text-xl text-blue-200 leading-relaxed mb-6">The `/setup-stats` command provides a real-time overview of your server's activity, member count, and bot usage metrics.</p>
+            <ul class="list-disc list-inside text-lg text-blue-200 space-y-2">
+                <li>Total member count.</li>
+                <li>Creates a seperate Category for statistics.</li>
+                <li>Works 24/7</li>
+                <li>Really easy to use.</li>
+            </ul>
+
+     <div class="relative group mt-4 mb-4">
+    <pre class="bg-gray-900 p-4 rounded-md mt-4 overflow-auto">
+<code><strong>CMD_44292fec-c193-4c0f-9350-93dc4a5c5f53 </strong></code></pre>
+    <button
+        class="copy-button absolute top-2 right-2 bg-gray-700 text-gray-300 p-1 rounded-md transition-opacity duration-200"
+        title="Copy code">
+        <img class="h-5 w-5" src="copy-icon.png" alt="">
+    </button></div>
+
+            <button class="mt-8 bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 shadow-md" onclick="showMainCommandsGrid()">Back to Commands</button>
+        </div>
+
+    </div>
+
+<script>
+       
+        const mainCommandsGrid = document.getElementById('main-commands-grid');
+        const contentCards = document.querySelectorAll('[id^="content-"]');
+
+      
+        function hideAllContentCards() {
+            contentCards.forEach(card => {
+                card.classList.add('hidden');
+            });
+        }
+
+   
+        function showMainCommandsGrid() {
+            hideAllContentCards(); 
+            mainCommandsGrid.classList.remove('hidden');
+            mainCommandsGrid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+ 
+        function hideMainCommandsGrid() {
+            mainCommandsGrid.classList.add('hidden');
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+
+            const commandButtons = document.querySelectorAll('button[id^="module-"]');
+
+  
+            commandButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const moduleName = this.id.replace('module-', '');
+                    const targetContentId = `content-${moduleName}`;
+                    const targetContentCard = document.getElementById(targetContentId);
+
+        
+                    if (moduleName === 'home') {
+                        window.showMainCommandsGrid();
+                    } else if (targetContentCard) {
+                        hideMainCommandsGrid();
+                        hideAllContentCards();
+                        targetContentCard.classList.remove('hidden');
+                        targetContentCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                });
+            });
+
+     
+            hideAllContentCards();
+            showMainCommandsGrid(); 
+        });
+    </script>
+
+        <script>
+            const sentences = [
+                "Watching Code Hub Developers cooking",
+                "Learn the way of Code with Code Hub",
+                "Level up your skills and bring any project to life.",
+                "Foz is the owner of Code Hub.",
+                "Best place to find the best Commands or Events for your Discord Bot.",
+                "Make your Bot better with Code Hub.",
+                "Discord Bot Development made easy.",
+                "Foz got cooked by Jayce for some reason.",
+                "OH SHIT!!! it got worse! Jayce blacklisted Foz from appeals!!",
+                "Never mind Foz is alright lmao",
+                "MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW MEOW",
+                "Apologies looks like Unreal's cat took over!",
+                "Turns out Exhai got cooked by Foz.",
+                "Never mind Exhai is alright it's Foz who got cooked by Exhai."
+
+            ];
+
+            let sentenceIndex = 0;
+            let charIndex = 0;
+            const animatedTextSpan = document.getElementById('animated-text');
+            const typingSpeed = 75;
+            const erasingSpeed = 40;
+            const newSentenceDelay = 3000;
+
+            function type() {
+                if (charIndex < sentences[sentenceIndex].length) {
+                    animatedTextSpan.textContent += sentences[sentenceIndex].charAt(charIndex);
+                    charIndex++;
+                    setTimeout(type, typingSpeed);
+                } else {
+                    setTimeout(erase, 3000);
+                }
+            }
+
+            function erase() {
+                if (charIndex > 0) {
+                    animatedTextSpan.textContent = sentences[sentenceIndex].substring(0, charIndex - 1);
+                    charIndex--;
+                    setTimeout(erase, erasingSpeed);
+                } else {
+                    sentenceIndex = (sentenceIndex + 1) % sentences.length;
+                    setTimeout(type, newSentenceDelay);
+                }
+            }
+
+            document.addEventListener('DOMContentLoaded', function () {
+                type();
+            });
+        </script>
+        <script src="script.js"></script>
+    </body>
+
+</html>

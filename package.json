@@ -1,0 +1,57 @@
+{
+  "name": "code-hub-marketplace",
+  "version": "1.0.0",
+  "description": "A professional Discord bot command marketplace built with Cloudflare Workers - SHOWCASE PROJECT ONLY",
+  "main": "worker/index.js",
+  "private": true,
+  "author": {
+    "name": "wrappeddev",
+    "url": "https://github.com/wrappeddev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wrappeddev/code-hub-marketplace.git"
+  },
+  "homepage": "https://github.com/wrappeddev/code-hub-marketplace",
+  "bugs": {
+    "url": "https://github.com/wrappeddev/code-hub-marketplace/issues"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "keywords": [
+    "discord",
+    "bot",
+    "marketplace",
+    "cloudflare-workers",
+    "showcase",
+    "portfolio",
+    "botghost"
+  ],
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "deploy:prod": "wrangler deploy --env production",
+    "setup": "node dev-setup.js",
+    "migrate": "node migrate-comments.js",
+    "db:local": "wrangler d1 execute marketplace-db --local",
+    "db:remote": "wrangler d1 execute marketplace-db --remote",
+    "db:init": "npm run db:local -- --file=database/schema.sql && npm run db:local -- --file=database/comments-schema.sql",
+    "db:init:prod": "npm run db:remote -- --file=database/schema.sql && npm run db:remote -- --file=database/comments-schema.sql",
+    "logs": "wrangler tail",
+    "login": "wrangler login"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "notice": [
+    "⚠️  SHOWCASE PROJECT - NOT FOR USE ⚠️",
+    "",
+    "This is a portfolio/showcase piece. This code is NOT open source and is NOT free to use.",
+    "Any use requires explicit written permission from wrappeddev.",
+    "See LICENSE file for complete terms and restrictions.",
+    "",
+    "Contact: https://github.com/wrappeddev"
+  ]
+}

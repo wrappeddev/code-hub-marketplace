@@ -1,0 +1,44 @@
+name = "code-hub-marketplace"
+main = "worker/index.js"
+compatibility_date = "2024-01-01"
+
+# D1 Database configuration
+[[d1_databases]]
+binding = "DB"
+database_name = "marketplace-db"
+database_id = "your-database-id-here"
+
+# R2 Bucket configuration
+[[r2_buckets]]
+binding = "UPLOADS"
+bucket_name = "marketplace-uploads"
+
+# Environment variables for local development
+[vars]
+ENVIRONMENT = "development"
+DISCORD_CLIENT_ID = "your-discord-client-id"
+DISCORD_CLIENT_SECRET = "your-discord-client-secret"
+DISCORD_REDIRECT_URI = "http://localhost:8787/submit"
+DISCORD_REDIRECT_URI_MARKETPLACE = "http://localhost:8787/marketplace"
+ADMIN_DISCORD_IDS = "your-discord-user-id"
+
+# Production environment (copy and modify for your production setup)
+# [env.production]
+# [env.production.vars]
+# ENVIRONMENT = "production"
+# DISCORD_CLIENT_ID = "your-discord-client-id"
+# DISCORD_CLIENT_SECRET = "your-discord-client-secret"
+# DISCORD_REDIRECT_URI = "https://your-domain.workers.dev/submit"
+# DISCORD_REDIRECT_URI_MARKETPLACE = "https://your-domain.workers.dev/marketplace"
+# ADMIN_DISCORD_IDS = "your-discord-user-id,additional-admin-ids"
+
+# Production D1 Database
+# [[env.production.d1_databases]]
+# binding = "DB"
+# database_name = "marketplace-db-prod"
+# database_id = "your-production-database-id"
+
+# Production R2 Bucket
+# [[env.production.r2_buckets]]
+# binding = "UPLOADS"
+# bucket_name = "marketplace-uploads-prod"
